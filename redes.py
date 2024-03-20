@@ -1,5 +1,4 @@
-#!/usr/bin/python
-#-*-coding: utf-8-*-
+# -*- coding: utf-8 -*-
 
 import subprocess
 import time
@@ -7,15 +6,16 @@ import time
 # Definindo o nome do arquivo de captura
 nome_arquivo = "captura_trafego_{0}.pcap".format(time.strftime("%Y%m%d-%H%M%S"))
 
+# Definindo o IP e porta do serviço de nome manualmente
+ip_servico_nome = "192.0.2.100"
+porta_servico_nome = "53"
+
 # a. Informando na tela qual o IP e porta dos serviços de nome e web
 print("Servico de Nome:")
-nome_host = "exemplo.psi.br"
-comando_nome = "nslookup {0}".format(nome_host)
-saida_nome = subprocess.check_output(comando_nome, shell=True)
-print(saida_nome)
+print("IP: {0}, Porta: {1}".format(ip_servico_nome, porta_servico_nome))
 
 print("\nServico Web:")
-ip_servico_web = "192.168.0.1"
+ip_servico_web = "203.0.113.200"
 porta_servico_web = "80"
 print("IP: {0}, Porta: {1}".format(ip_servico_web, porta_servico_web))
 
