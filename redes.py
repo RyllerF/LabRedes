@@ -7,7 +7,7 @@ import time
 
 nome_arquivo = "captura_trafego_{0}.pcap".format(time.strftime("%Y%m%d-%H%M%S"))
 
-ip_servico_nome = "192.168.0.2"
+ip_servico_nome = "192.0.2.100"
 porta_servico_nome = "53"
 
 
@@ -15,7 +15,7 @@ print("Servico de Nome:")
 print("IP: {0}, Porta: {1}".format(ip_servico_nome, porta_servico_nome))
 
 print("\nServico Web:")
-ip_servico_web = "192.168.0.1"
+ip_servico_web = "203.0.113.200"
 porta_servico_web = "80"
 print("IP: {0}, Porta: {1}".format(ip_servico_web, porta_servico_web))
 
